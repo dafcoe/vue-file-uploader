@@ -1,0 +1,65 @@
+{
+  "name": "@dafcoe/vue-file-uploader",
+  "version": "0.0.1",
+  "description": "File uploader built using vue3. It allows multiple file selection / drag and drop",
+  "keywords": [
+    "file upload",
+    "drag and drop",
+    "vue",
+    "vue3",
+    "javascript",
+    "typescript"
+  ],
+  "homepage": "https://github.com/dafcoe/vue-file-uploader",
+  "bugs": {
+    "url": "https://github.com/dafcoe/vue-file-uploader/issues",
+    "email": "dafcoe@gmail.com"
+  },
+  "license": "MIT",
+  "author": {
+    "name": "Daf Coe",
+    "email": "dafcoe@gmail.com"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/dafcoe/vue-file-uploader"
+  },
+  "files": [
+    "dist"
+  ],
+  "main": "./dist/vue-file-uploader.umd.ts",
+  "module": "./dist/vue-file-uploader.es.ts",
+  "exports": {
+    ".": {
+      "import": "./dist/vue-file-uploader.es.js",
+      "require": "./dist/vue-file-uploader.umd.js"
+    },
+    "./style.css": "./dist/style.css"
+  },
+  "types": "./dist/main.d.ts",
+  "scripts": {
+    "build:dev": "vite",
+    "build:prod": "rm -rf dist && vue-tsc --noEmit && vite build",
+    "server:start": "cd src/server && php -S localhost:9000",
+    "server:clean": "rm -rf src/server/uploads/*",
+    "lint": "eslint --ext .js,.ts,.vue src"
+  },
+  "dependencies": {
+    "nanoid": "^3.2.0",
+    "vue": "^3.2.25"
+  },
+  "devDependencies": {
+    "@types/node": "^17.0.18",
+    "@typescript-eslint/eslint-plugin": "^5.11.0",
+    "@typescript-eslint/parser": "^5.11.0",
+    "@vitejs/plugin-vue": "^2.0.0",
+    "eslint": "^8.8.0",
+    "eslint-plugin-vue": "^8.4.1",
+    "rollup-plugin-typescript2": "^0.31.2",
+    "sass": "^1.49.7",
+    "typescript": "^4.4.4",
+    "vite": "^2.7.2",
+    "vue-tsc": "^0.29.8"
+  },
+  "private": false
+}
