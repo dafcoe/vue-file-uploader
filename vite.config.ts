@@ -7,8 +7,9 @@ module.exports = defineConfig({
   build: {
     lib: {
       entry: path.resolve(__dirname, 'src/modules/VueFileUploaderPlugin.ts'),
+      formats: ['es', 'cjs'],
       name: 'VueFileUploader',
-      fileName: (format) => `vue-file-uploader.${format}.js`
+      fileName: (format) => format === 'es' ? 'index.js' : 'index.cjs'
     },
     rollupOptions: {
       external: ['vue'],
