@@ -22,14 +22,14 @@ Import `VueFileUploader` component, either globally (in your main.js / main.ts f
 ```js
 // Globally
 import VueFileUploader from '@dafcoe/vue-file-uploader'
-import '@dafcoe/vue-file-uploader/dist/style.css'
+import '@dafcoe/vue-file-uploader/style.css'
 
 const app = createApp(App)
 app.use(VueFileUploader).mount('#app')
 
 // Locally
 import { VueFileUploader } from '@dafcoe/vue-file-uploader'
-import '@dafcoe/vue-file-uploader/dist/style.css'
+import '@dafcoe/vue-file-uploader/style.css'
 ```
 
 Use it in the template as follows:

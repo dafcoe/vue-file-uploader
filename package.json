@@ -1,6 +1,6 @@
 {
   "name": "@dafcoe/vue-file-uploader",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "File uploader built using vue3. It allows multiple file selection / drag and drop",
   "keywords": [
     "file upload",
@@ -36,7 +36,7 @@
     },
     "./style.css": "./dist/style.css"
   },
-  "types": "./dist/main.d.ts",
+  "types": "./dist/modules/VueFileUploaderPlugin.d.ts",
   "scripts": {
     "build:dev": "vite",
     "build:prod": "rm -rf dist && vue-tsc --noEmit && vite build",
